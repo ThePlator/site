@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<!-- the bgcolor attribute is use for backgaround color -->
+<body bgcolor="lavender">
+    <!-- <hr> is self closing tag and used for horizontal line and size define the size of line  -->
+    <hr size="3" noshade="0">
+    <h2>This is form</h2>
+    <!-- There are 6 level of heading h1,h2,h3,h4,h5,h6 -->
+    <hr size="3" noshade="0">
+    <!-- backend.php is the sever where we save the forms detail  -->
+    <form action="backend.php">
+        <!-- if we use label tag then we have to define the id also and id is must same as for(which is in label tag) it work as if we click on the name (as a user)then it will redirect to the blank -->
+        <label for="name"> Name:</label>
+        <div>
+            <!-- we must have to define what kind of input we want to take from user like text is used for name-->
+            <input type="text" id="name">
+        </div>
+        <!-- if we define the input tag then it only take that type of input eg:number take only from 0-9 and e  -->
+        <br>
+        <div>
+            Roll Number: <input type="number" value="myroll">
+        </div>
+        <br>
+        <!-- radio type is used if we want single tick mark in any type of question-->
+        <div>
+            Branch: CSE <input type="radio" name="mybranch">
+            CSE(AI) <input type="radio" name="mybranch">
+            ECE <input type="radio" name="mybranch">
+            EEE <input type="radio" name="mybranch">
+            ME <input type="radio" name="mybranch">
+            CE <input type="radio" name="mybranch">
+        </div>
+        <br>
+        <!-- date is used for date type input -->
+        <div>
+            Date Of Birth: <input type="date" name="mydob">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">
+            Other <input type="radio" name="mygender">
+        </div>
+        <br>
+        <!-- checkbox is used for tick the single box if we want the permanent tick mark then we should add "checked"-->
+        <div>
+            Are you Eligible?: <input type="checkbox" name="myeligibility">
+        </div>
+        <br>
+        <div>
+            Phone Number: +91 <input type="number">
+        </div>
+        <br>
+        <!-- textarea is used if we want many number of input line -->
+        <div>
+            Address: <br> <textarea name="myaddress" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myemail">
+        </div>
+        <br>
+        <!-- select tag is use for selection option and option tag is in between select tag -->
+        <div>
+            <label for="car">Car:</label>
+            <select name="mycar" id="car">
+                <option value="ind">NOPE</option>
+                <option value="swt">omin-E</option>
+                <option value="tek">Indica</option>
+            </select>
+        </div>
+        <br>
+        <!--if we want to upload file then we should define input type "file" and if we want special type of file to be uploaded then we must define accept="image(something)/jpeg/pdf/png"  -->
+        <div>
+            <label for="files">Photo:</label>
+            <Input type="file" id="files" name="myfiles" accept="image/jpeg"></Input>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+    </form>
+</body>
+
+</html>
